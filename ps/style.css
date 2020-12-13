@@ -1,0 +1,376 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+#abc{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bms1.jpg);
+    height: 88.5vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+ :root{
+    --navbar-height: 59px; 
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    /* float: right; */
+    
+}
+#logo{
+margin:10px 34px;
+}
+#logo img{
+    height: 60px;
+    width: 82px;;
+    margin:0px -2px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    top: 0px;
+    left: 0px;
+
+}
+.nav{
+ display: flex;
+ font-size: 1.3rem;
+ padding-left: 95px;
+   
+}
+/* .nav  button{
+    padding: 21px 15px;
+    /* border-radius: 20px; */
+    /* text-decoration: none;
+    color: rgb(7, 23, 245);
+    width: 114px;
+    font-size: 17px;
+    /* } */ 
+.nav  a{
+    padding: 21px 15px;
+    /* border-radius: 20px; */
+    text-decoration: none;
+    color: rgb(7, 23, 245);
+    cursor: pointer;
+    }
+    .nav .dropbtn{
+        padding: 21px 15px;
+        /* border-radius: 20px; */
+        text-decoration: none;
+        color: rgb(7, 23, 245);
+    }
+ .nav a:hover{
+     color: white;
+     background-color: black;
+ }
+ .nav .dropbtn:hover{
+    color: white;
+    background-color: black;
+ }
+ .nav button:hover{
+    color: white;
+    background-color: black;
+}
+
+
+ .main{
+     margin-left: 250px;
+     margin-right: 123px;
+     font-size: 1.5rem;
+     font-weight: bold;
+     color: rgb(0, 0, 0);
+     
+ }
+.login{
+    width: 360px;
+    padding: 15% 0 0;
+    margin: auto;
+}
+/* .form{
+    position: relative;
+    z-index: 1;
+    background: rgb(0 0 0);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 33px;
+    text-align: center; */
+
+/* }
+.form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 14px;
+} */
+/* .form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #377299;
+    width: 100%;
+    border: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    height: 50px;
+} */
+/* .form button:hover,.form button:active{
+    background: #042366;
+}
+.form .message{
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+
+}
+.form .message a{
+    color: #377299;
+    text-decoration: none;
+}
+.form .register{
+    display: none;
+} */
+
+
+
+/* Admin CSS */
+.mainadmin{
+    margin-left: 294px;
+    margin-right: 37px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .nav .dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 23px 13px;
+    background-color: inherit;
+    font-family: inherit;
+    color:blue;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    
+    /* box-shadow: 10px 18px 20px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    /* border-radius: 1rem; */
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 3px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+/* Admin login  popup */
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #4095af;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  /* img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+   */
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 45%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  /* .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  } */
+  
+  /* @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  } */
+  
+  /* Change styles for span and cancel button on extra small screens */
+  /* @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  } */
+
+  input[type=submit] {
+    width: 125px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  select{
+    width: 50%;
+    padding: 5px;
+    
+   
+    
+    }
+  option{
+    
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ebeee6;
+    color: #000;
+  }
+
+
+
+
+  /* .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 85px;
+    left: 0;
+    background-color:#c0b7b7;
+    overflow-x: hidden;
+    padding-top: 20px;
+  } */
+  
+  /* .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #030000;
+    display: block;
+  } */
+ 
+ 
